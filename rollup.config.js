@@ -12,7 +12,11 @@ export default {
   plugins: [
     resolve(),
     commonjs(),
-    babel({ babelHelpers: 'bundled' }),
+    babel({
+      exclude: 'node_modules/**', // Only transpile our source code
+      babelHelpers: 'bundled',
+      presets: ['@babel/preset-react'], // Add the React preset for JSX
+    }),
   ],
-  external: ['react', 'react-dom'],
+  external: ['react', 'react-dom'], // Exclude React from the bundle
 };
