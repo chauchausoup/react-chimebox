@@ -1,25 +1,24 @@
 {
   "name": "react-chimebox",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "React components to integrate chimebox in your web app.",
-  "main": "index.js",
+  "main": "dist/bundle.js", 
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development"
   },
-  "type": "module",
-  "author": "",
-  "license": "ISC",
-
-  "dependencies": {
+  "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
     "@babel/preset-react": "^7.24.7",
-    "@rollup/plugin-babel": "^6.0.4",
-    "@rollup/plugin-commonjs": "^26.0.1",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "rollup": "^4.22.0"
-  }
+    "babel-loader": "^9.2.1",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  },
+  "license": "ISC"
 }
