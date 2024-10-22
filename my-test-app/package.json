@@ -1,0 +1,32 @@
+{
+  "name": "react-chimebox-test-app",
+  "version": "1.0.0",
+  "description": "React components to integrate chimebox in your web app.",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "dependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-chimebox": "^1.0.2",
+    "react-dom": "^17.0.0 || ^18.0.0",
+    "react-scripts": "^5.0.1"
+  },
+  "resolutions": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
