@@ -1,34 +1,33 @@
 {
-  "name": "react-chimebox-test-app",
-  "version": "1.0.0",
-  "description": "React components to integrate chimebox in your web app.",
-  "author": "",
-  "license": "ISC",
-  "scripts": {
-    "start": "react-scripts start"
-  },
-  "dependencies": {
-    "@marsidev/react-turnstile": "^1.0.2",
-    "react": " ^18.0.0",
-    "react-chimebox": "file:react-chimebox-2.0.0.tgz",
-    "react-dom": " ^18.0.0",
-    "react-scripts": "^5.0.1",
-    "react-turnstile": "^1.1.4"
-  },
-  "resolutions": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "react-chimebox-test-app",
+	"version": "1.0.0",
+	"description": "React components to integrate chimebox in your web app.",
+	"author": "",
+	"license": "ISC",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"serve": "vite preview"
+	},
+	"dependencies": {
+		"react": "^18.0.0",
+		"react-chimebox": "file:react-chimebox-2.0.1.tgz",
+		"react-dom": "^18.0.0"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-react": "^4.3.3",
+		"vite": "^4.5.5"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
 }
