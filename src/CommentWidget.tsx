@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useRef } from 'react';
 import { Turnstile } from '@marsidev/react-turnstile';
 import axios from 'axios';
