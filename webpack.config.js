@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/CommentWidget.js',  // Entry point to your component
+  entry: './src/CommentWidget.tsx',  // Entry point to your TypeScript component
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -11,6 +11,11 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.(ts|tsx)$/,        // For TypeScript and TSX files
+        exclude: /node_modules/,
+        use: 'ts-loader',           // Use ts-loader for transpiling TypeScript
+      },
       {
         test: /\.(js|jsx)$/,        // For JavaScript and JSX files
         exclude: /node_modules/,
@@ -35,7 +40,7 @@ module.exports = {
     },
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],  // Support TypeScript and JavaScript extensions
   },
   mode: 'production',
 };

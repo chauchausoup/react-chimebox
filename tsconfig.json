@@ -1,8 +1,21 @@
 {
-    "compilerOptions": {
-        "esModuleInterop": true,
-        "skipLibCheck": true,
-        "typeRoots": ["./node_modules/@types", "./src/types"]
-        // other options...
-    }
+	"compilerOptions": {
+		"target": "es5",
+		"module": "esnext",
+		"jsx": "react",
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"declaration": true, // Generates declaration files for your components
+		"declarationDir": "./types", // Output directory for type declarations
+		"outDir": "./dist", // Output directory for compiled files
+	},
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"node_modules",
+		"dist"
+	]
 }
