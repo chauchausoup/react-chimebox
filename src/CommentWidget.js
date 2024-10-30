@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Turnstile } from '@marsidev/react-turnstile';
 import axios from 'axios';
 
-const CommentWidget = ({ siteId }) => {
+const CommentWidget = ({ siteId,turnstileDataSiteKey }) => {
     const [isVisible, setIsVisible] = useState(false);
     const [loading, setLoading] = useState(false);
     const [turnstileToken, setTurnstileToken] = useState(null);
@@ -13,7 +13,7 @@ const CommentWidget = ({ siteId }) => {
 
     const spinnerRef = useRef(null);
     const formContainerRef = useRef(null);
-    const sitekey = '0x4AAAAAAAkbKg6UyJTfTWFn';
+    const sitekey = turnstileDataSiteKey;
 
     const toggleWidgetVisibility = () => {
         setIsVisible(!isVisible);
