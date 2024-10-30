@@ -1,6 +1,6 @@
 {
   "name": "react-chimebox",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "React components to integrate chimebox in your web app.",
   "main": "dist/bundle.js",
   "scripts": {
